@@ -1,0 +1,11 @@
+<h1>Alla projekt</h1>
+
+<% @projects.each do |project|  %>
+	<ul>
+		<li><h2><%= link_to "#{project.project_name}", project_path(project)  %></h2></li>
+	</ul>
+<% end %>
+
+
+<%# här ska det stå om jag är medlem eller ej i varje proj.
+#och om jag har några tickets #%>
