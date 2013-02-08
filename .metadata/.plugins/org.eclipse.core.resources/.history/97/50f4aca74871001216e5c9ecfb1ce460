@@ -1,0 +1,15 @@
+class SessionsController < ApplicationController
+  resources :sessions, only: [:new, :create, :destroy]
+  
+  def new
+  end
+
+  def create
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to log_in_path, :notice => "Logged out"
+  end
+  
+end

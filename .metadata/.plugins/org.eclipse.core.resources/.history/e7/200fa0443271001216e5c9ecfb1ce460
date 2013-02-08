@@ -1,0 +1,20 @@
+class ApplicationController < ActionController::Base
+  protect_from_forgery
+  
+  def confirm_logged_in
+    unless session[:user_id]
+      flash[:notice] = "Du måste vara inloggad"
+      redirect_to :root
+      return false #halts the before filter
+    else
+      return true
+    end
+    end
+    
+    def logout
+      #förstör sessionen
+      session[:user_id] = null
+      #redirect till något ställe för utloggade andvändare
+      redirect_to(:action => 'index')
+  end
+end

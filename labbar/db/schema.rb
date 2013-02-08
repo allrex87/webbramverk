@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20130131162629) do
     t.string   "first_name", :limit => 20,                 :null => false
     t.string   "last_name",  :limit => 40,                 :null => false
     t.string   "email",                    :default => "", :null => false
-    t.string   "password",   :limit => 8,                  :null => false
+    t.string   "password",                                 :null => false
     t.datetime "created_at",                               :null => false
     t.datetime "updated_at",                               :null => false
   end

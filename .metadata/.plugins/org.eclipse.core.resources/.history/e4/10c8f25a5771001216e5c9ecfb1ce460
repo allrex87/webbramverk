@@ -1,0 +1,11 @@
+<menu>
+	<div class="three columns" id="logo"> <%= image_tag "logo.png" %> </div>
+		
+	<a href="/registrera/" class="four columns <%= "active" if @active_page == "registrera" %>" >
+		Registrera dig
+	</a>
+			
+	<a href="/" class="four columns <%= "active" if @active_page == "" %>" >
+		Logga in
+	</a>
+</menu>

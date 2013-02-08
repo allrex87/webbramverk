@@ -1,0 +1,18 @@
+class UsersController < ApplicationController
+  
+    layout "start"
+  def new
+    @user_to_create = User.new
+  end
+  
+  def create
+    @user_to_create = User.new(params[:user])
+    if @user_to_create.save
+      session[:user_id] = user.id
+      redirect_to root_url, :notice => "Logged in!"
+    else
+      redirect_to redirect_url, :alert => "Login failed!"
+    end
+  end
+
+end

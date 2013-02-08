@@ -1,0 +1,991 @@
+!SESSION 2013-02-01 20:25:58.204 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-01 20:26:54.068
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-01 20:26:58.794
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Not supported yet.
+!STACK 0
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.jrubyparser.ast.LambdaNode.accept(LambdaNode.java:58)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitHashNode(InOrderVisitor.java:414)
+	at org.jrubyparser.ast.HashNode.accept(HashNode.java:57)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitCallNode(InOrderVisitor.java:193)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitCallNode(SourceElementVisitor.java:230)
+	at org.jrubyparser.ast.CallNode.accept(CallNode.java:70)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitLocalAsgnNode(InOrderVisitor.java:456)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitLocalAsgnNode(SourceElementVisitor.java:839)
+	at org.jrubyparser.ast.LocalAsgnNode.accept(LocalAsgnNode.java:62)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitIfNode(InOrderVisitor.java:438)
+	at org.jrubyparser.ast.IfNode.accept(IfNode.java:65)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitDefnNode(InOrderVisitor.java:299)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitDefnNode(SourceElementVisitor.java:346)
+	at org.jrubyparser.ast.DefnNode.accept(DefnNode.java:51)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitClassNode(InOrderVisitor.java:213)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitClassNode(SourceElementVisitor.java:260)
+	at org.jrubyparser.ast.ClassNode.accept(ClassNode.java:68)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitModuleNode(InOrderVisitor.java:517)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitModuleNode(SourceElementVisitor.java:824)
+	at org.jrubyparser.ast.ModuleNode.accept(ModuleNode.java:66)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitRootNode(InOrderVisitor.java:668)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitRootNode(SourceElementVisitor.java:848)
+	at org.jrubyparser.ast.RootNode.accept(RootNode.java:84)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.indexAST(RubyFileIndexingParticipant.java:73)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.indexSource(RubyFileIndexingParticipant.java:61)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.index(RubyFileIndexingParticipant.java:37)
+	at com.aptana.index.core.IndexRequestJob.indexFileStores(IndexRequestJob.java:205)
+	at com.aptana.index.core.IndexContainerJob.run(IndexContainerJob.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-01 20:27:44.145
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-04 10:05:59.594 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:06:06.356
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.409
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.410
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.416
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.417
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: params()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.417
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: PHPFunction
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.417
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:37:59.418
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-04 10:38:25.356
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-04 10:52:04.693 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\webb II labb 1\index.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\webb II labb 1\index.php
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 10:52:13.742
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-04 10:56:25.461
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-04 11:39:06.349 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\model\ScratchScript.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\model\ScratchScript.php
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 11:39:15.653
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-04 11:40:03.470
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-04 11:43:51.656 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\model\Producer.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\model\Producer.php
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 11:44:01.197
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-04 11:44:33.773
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-04 11:53:57.732 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\index.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\index.php
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 11:54:07.289
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-04 11:55:39.298
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-04 11:56:02.045 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\index.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 D:\SKOLAN\webbprogrammering\ÅR 2\WEBB II\labbar\labbar från wamp\labb2\index.php
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 11:56:11.405
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+!SESSION 2013-02-04 17:51:49.949 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-02-04 17:51:51.811
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-04 18:29:58.624
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+!SESSION 2013-02-04 18:50:03.580 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-02-04 18:50:06.446
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-04 23:13:29.857
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-05 13:35:05.269 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Framework arguments:  D:\SKOLAN\webbprogrammering\webbproj egen\InsertScript.php
+Command-line arguments:  -os win32 -ws win32 -arch x86 D:\SKOLAN\webbprogrammering\webbproj egen\InsertScript.php
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-05 13:35:16.124
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-05 13:35:35.784
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-07 10:06:40.492 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 10:06:51.958
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-07 10:20:46.785
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-07 15:19:25.446 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 15:19:37.137
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.083
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.083
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: find_real_file(dir, name, options)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.083
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.084
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: Filesystem
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.084
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.084
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: Importers
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.085
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Sass
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.085
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.085
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.086
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.086
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.095
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.095
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: initialize(root, paths, extensions, aliases)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.095
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Index
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.096
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.096
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: find_aliases_for(extension)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.096
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Hike
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.097
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.097
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 16:44:06.097
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.541
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.541
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: initialize_from_table()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.541
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: ConfigTable
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.542
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.542
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  null
+!STACK 0
+java.util.EmptyStackException
+	at java.util.Stack.peek(Unknown Source)
+	at com.aptana.ruby.core.RubyStructureBuilder.enterType(RubyStructureBuilder.java:252)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitModuleNode(SourceElementVisitor.java:822)
+	at org.jrubyparser.ast.ModuleNode.accept(ModuleNode.java:66)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitRootNode(InOrderVisitor.java:668)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitRootNode(SourceElementVisitor.java:848)
+	at org.jrubyparser.ast.RootNode.accept(RootNode.java:84)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.RubyParser.parse(RubyParser.java:90)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:312)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:231)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:218)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:201)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.parseURI(RubyCodeResolver.java:286)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.getMatchingElementHyperlinks(RubyCodeResolver.java:399)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.findMethods(RubyCodeResolver.java:335)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.methodCallLink(RubyCodeResolver.java:312)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.resolve(RubyCodeResolver.java:91)
+	at com.aptana.editor.ruby.hyperlink.RubyHyperlinkDetector.detectHyperlinks(RubyHyperlinkDetector.java:58)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:80)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:286)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:258)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:462)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:211)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.556
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.557
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: initialize_from_table()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.557
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: ConfigTable
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.557
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 17:32:47.558
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  null
+!STACK 0
+java.util.EmptyStackException
+	at java.util.Stack.peek(Unknown Source)
+	at com.aptana.ruby.core.RubyStructureBuilder.enterType(RubyStructureBuilder.java:252)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitModuleNode(SourceElementVisitor.java:822)
+	at org.jrubyparser.ast.ModuleNode.accept(ModuleNode.java:66)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitRootNode(InOrderVisitor.java:668)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitRootNode(SourceElementVisitor.java:848)
+	at org.jrubyparser.ast.RootNode.accept(RootNode.java:84)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.RubyParser.parse(RubyParser.java:90)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:312)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:231)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:218)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:201)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.parseURI(RubyCodeResolver.java:286)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.getMatchingElementHyperlinks(RubyCodeResolver.java:399)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.findMethods(RubyCodeResolver.java:335)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.methodCallLink(RubyCodeResolver.java:312)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.resolve(RubyCodeResolver.java:91)
+	at com.aptana.editor.ruby.hyperlink.RubyHyperlinkDetector.detectHyperlinks(RubyHyperlinkDetector.java:58)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:80)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:286)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:258)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:462)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:211)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.371
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.372
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: initialize(root, paths, extensions, aliases)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.372
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Index
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.373
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.373
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: find_aliases_for(extension)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.373
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Hike
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.374
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.374
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:03:07.374
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.668
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.668
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: find_real_file(dir, name, options)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.668
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.669
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: Filesystem
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.669
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.669
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: Importers
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.670
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Sass
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.670
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.670
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.670
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 18:49:30.671
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.642
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.643
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: outdated()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.643
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Gem::Specification
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.644
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.644
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: hash()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.645
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.646
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.646
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.649
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.650
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: outdated()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.650
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Gem::SourceIndex
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.650
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.651
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  null
+!STACK 0
+java.util.EmptyStackException
+	at java.util.Stack.peek(Unknown Source)
+	at com.aptana.ruby.core.RubyStructureBuilder.enterType(RubyStructureBuilder.java:252)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitModuleNode(SourceElementVisitor.java:822)
+	at org.jrubyparser.ast.ModuleNode.accept(ModuleNode.java:66)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitRootNode(InOrderVisitor.java:668)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitRootNode(SourceElementVisitor.java:848)
+	at org.jrubyparser.ast.RootNode.accept(RootNode.java:84)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.RubyParser.parse(RubyParser.java:90)
+	at com.aptana.parsing.AbstractParser.parse(AbstractParser.java:10)
+	at com.aptana.parsing.ParsingEngine.parse(ParsingEngine.java:312)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:231)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:218)
+	at com.aptana.parsing.ParserPoolFactory.parse(ParserPoolFactory.java:201)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.parseURI(RubyCodeResolver.java:286)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.getMatchingElementHyperlinks(RubyCodeResolver.java:399)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.findMethods(RubyCodeResolver.java:335)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.methodCallLink(RubyCodeResolver.java:312)
+	at com.aptana.ruby.internal.core.codeassist.RubyCodeResolver.resolve(RubyCodeResolver.java:91)
+	at com.aptana.editor.ruby.hyperlink.RubyHyperlinkDetector.detectHyperlinks(RubyHyperlinkDetector.java:58)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:80)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:286)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:258)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:462)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:211)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4165)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3754)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.780
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.781
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: outdated()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.781
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Gem::Specification
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.782
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.782
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: hash()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.782
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.784
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting type declaration, but should have contained the type.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.784
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.887
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.888
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: parse(argv)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.888
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: RDoc::Options
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.889
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.889
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.926
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.927
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: normalize_indentation(str)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.927
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: CommentNode
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.927
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.927
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.938
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.938
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: sum(sign)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.938
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Duration
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.938
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 19:22:44.939
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 21:18:27.877
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 21:18:27.891
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: do_exec_query(sql, name, binds)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 21:18:27.892
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: DatabaseStatements
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 21:18:27.892
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 21:18:27.892
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-07 21:52:13.878
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+
+!ENTRY org.eclipse.core.jobs 4 1 2013-02-07 21:52:13.878
+!MESSAGE Worker thread ended job: Refreshing workspace(7), but still holds rule: ThreadJob(Refreshing workspace(7),[R/,])
+!SESSION 2013-02-07 21:52:15.217 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-07 21:52:21.670
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-07 21:57:02.243
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-08 09:31:41.007 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:31:47.993
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:40:38.305
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected field decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:40:38.306
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected block on top of stack, but was: special_fun()
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:40:38.306
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected method decl on top of stack, but was: Parser
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:40:38.307
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  Expected type decl on top of stack, but was: 
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:40:38.307
+!MESSAGE (Build 3.2.2.201208201020) [ERROR]  AST stack was empty upon exiting script, but should have contained the script.
+
+!ENTRY org.eclipse.ui 4 0 2013-02-08 09:41:56.120
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4282)
+	at org.eclipse.swt.SWT.error(SWT.java:4197)
+	at org.eclipse.swt.SWT.error(SWT.java:4168)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Scrollable.getClientArea(Scrollable.java:168)
+	at org.eclipse.tm.internal.terminal.textcanvas.VirtualCanvas.doUpdateScrollbar(VirtualCanvas.java:311)
+	at org.eclipse.tm.internal.terminal.textcanvas.VirtualCanvas.updateScrollbars(VirtualCanvas.java:297)
+	at org.eclipse.tm.internal.terminal.textcanvas.VirtualCanvas.setVirtualExtend(VirtualCanvas.java:217)
+	at org.eclipse.tm.internal.terminal.textcanvas.GridCanvas.setVirtualExtend(GridCanvas.java:192)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.calculateGrid(TextCanvas.java:300)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas.access$0(TextCanvas.java:298)
+	at org.eclipse.tm.internal.terminal.textcanvas.TextCanvas$1.dimensionsChanged(TextCanvas.java:102)
+	at org.eclipse.tm.internal.terminal.textcanvas.AbstractTextCanvasModel.fireDimensionsChanged(AbstractTextCanvasModel.java:66)
+	at org.eclipse.tm.internal.terminal.textcanvas.AbstractTextCanvasModel.updateSnapshot(AbstractTextCanvasModel.java:95)
+	at org.eclipse.tm.internal.terminal.textcanvas.AbstractTextCanvasModel.update(AbstractTextCanvasModel.java:116)
+	at org.eclipse.tm.internal.terminal.textcanvas.PollingTextCanvasModel$1.run(PollingTextCanvasModel.java:28)
+	at org.eclipse.swt.widgets.Display.runTimer(Display.java:4266)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3353)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2531)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-08 09:56:14.983
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-08 09:56:16.034 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 09:56:21.331
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-08 10:12:26.698
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-08 10:12:27.873 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 10:12:33.268
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-08 10:14:06.698
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-08 10:14:15.285 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 10:14:20.658
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+

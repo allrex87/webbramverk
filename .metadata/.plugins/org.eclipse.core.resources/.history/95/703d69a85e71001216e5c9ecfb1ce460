@@ -1,0 +1,19 @@
+class UsersController < ApplicationController
+  
+    layout "start"
+  def new
+    @user_to_create = User.new
+  end
+  
+   def create
+    @user_to_create = User.new(params[:user])
+    if @user_to_create.save
+      flash[:notice] = "Användaren är skapat!"
+    else
+      #valideringfel hittas i Project.errors
+      flash[:notice] = User.errors
+      redirect_to projects_path
+    end
+  end
+
+end

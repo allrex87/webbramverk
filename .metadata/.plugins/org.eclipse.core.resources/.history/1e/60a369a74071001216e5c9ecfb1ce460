@@ -1,0 +1,22 @@
+<h1>Skapa nytt projekt</h1>
+
+<p> Eller vill du lägga till dig som medlem på ett befintligt projekt?</p>
+
+
+<%# render "_ecPartial"%>
+<%= form_for @project_to_create, :url => { :action => "create"}, :html => { :class => "create_form"} do |f| %>
+	
+	<%= f.label :project_name, "Projektnamn" %>
+		<%= f.text_field :project_name %>
+		
+	<%= f.label :description, "Beskrivning" %>
+		<%= f.text_field :description %>
+	
+	<%= f.label :start_date, "Start datum" %>
+		<%= f.text_field :start_date %>
+	
+	<%= f.label :end_date, "Slut datum" %>
+		<%= f.number_field :end_date %>
+		
+	<%= submit_tag("Skapa") %>
+<% end %>
