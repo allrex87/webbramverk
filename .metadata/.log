@@ -989,3 +989,28 @@ C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/
 	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
 	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
 
+
+!ENTRY org.eclipse.core.resources 4 566 2013-02-08 10:44:34.382
+!MESSAGE Workspace was not properly initialized or has already shutdown.
+!SESSION 2013-02-08 10:44:35.431 -----------------------------------------------
+eclipse.buildId=3.2.2.201208201020
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.aptana.ruby.core 4 0 2013-02-08 10:44:40.901
+!MESSAGE (eval):1: Use RbConfig instead of obsolete and deprecated Config.
+(eval):1: warning: variable $= is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+(eval):1: warning: variable $KCODE is no longer effective
+C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval': Permission denied - D:\SKOLAN\webbprogrammering\webbramverk\.metadata\.plugins\com.aptana.ruby.core\-941821722\4 (Errno::EACCES)
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `eval'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:180:in `block (3 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:179:in `block (2 levels) in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `open'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:178:in `block in <main>'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `each'
+	from C:/Users/Alexandra/AppData/Local/Aptana Studio 3/configuration/org.eclipse.osgi/bundles/83/1/.cp/ruby/core_stubber.rb:152:in `<main>'
+

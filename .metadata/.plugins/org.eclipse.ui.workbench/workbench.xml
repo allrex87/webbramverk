@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="39" version="2.0">
+<workbench progressCount="40" version="2.0">
 <workbenchAdvisor/>
 <window height="940" maximized="true" width="761" x="963" y="54">
 <fastViewData fastViewLocation="1024"/>
@@ -49,9 +49,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/labbar/app/controllers/users_controller.rb"/>
 <editorState selectionHorizontalPixel="0" selectionLength="60" selectionOffset="226" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.ruby" name="user.rb" partName="user.rb" path="D:/SKOLAN/webbprogrammering/webbramverk/labbar/app/models/user.rb" title="user.rb" tooltip="labbar/app/models/user.rb" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="user.rb" partName="user.rb" path="D:/SKOLAN/webbprogrammering/webbramverk/labbar/app/models/user.rb" title="user.rb" tooltip="labbar/app/models/user.rb" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/labbar/app/models/user.rb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="125" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="236" selectionTopPixel="0"/>
 </editor>
 <editor id="com.aptana.editor.ruby" name="sessions_controller.rb" partName="sessions_controller.rb" path="D:/SKOLAN/webbprogrammering/webbramverk/labbar/app/controllers/sessions_controller.rb" title="sessions_controller.rb" tooltip="labbar/app/controllers/sessions_controller.rb" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/labbar/app/controllers/sessions_controller.rb"/>
@@ -89,9 +89,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/labbar/db/migrate/20130128141513_create_users.rb"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="306" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.ruby" name="seeds.rb" partName="seeds.rb" path="D:/SKOLAN/webbprogrammering/webbramverk/labbar/db/seeds.rb" title="seeds.rb" tooltip="labbar/db/seeds.rb" workbook="DefaultEditorWorkbook">
+<editor id="com.aptana.editor.ruby" name="seeds.rb" partName="seeds.rb" path="D:/SKOLAN/webbprogrammering/webbramverk/labbar/db/seeds.rb" title="seeds.rb" tooltip="labbar/db/seeds.rb" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/labbar/db/seeds.rb"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1550" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="389" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -249,10 +249,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/labbar/db/migrate/20130128141513_create_users.rb"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/labbar/db/migrate/20130128141513_create_users.rb"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/labbar/db/seeds.rb"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.ruby" path="/labbar/app/models/user.rb"/>
 </editors>
-<item historyLabel="projects_controller.rb" index="2">
-<position/>
-</item>
 <item historyLabel="users_controller.rb" index="1">
 <position/>
 </item>
@@ -397,8 +395,11 @@
 <item historyLabel="20130128141513_create_users.rb" index="13">
 <position info="not_deleted" x="306" y="0"/>
 </item>
-<item active="true" historyLabel="seeds.rb" index="14">
+<item historyLabel="seeds.rb" index="14">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="user.rb" index="15">
+<position info="not_deleted" x="125" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

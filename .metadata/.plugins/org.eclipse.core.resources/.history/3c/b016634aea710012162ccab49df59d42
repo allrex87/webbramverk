@@ -17,7 +17,6 @@ class User < ActiveRecord::Base
     :presence => { :message => 'Du måste ange ett efternamn'},
     :length => {:minimum => 1, :maximum => 40, :message => "Förnamnet måste vara 1-40 tecken"}
  
- 
   validates :email,
     :presence => { :message => 'Du måste ange en emailadress'},
     :email => true
