@@ -24,11 +24,33 @@ a
 {
 	text-decoration:none;
 	font-family: 'Oswald', sans-serif;
-	color:#aea80b;
+	color:#6cc927;
 }
 a:hover
 {
 	color:#9cae92;
+}
+a.crud
+{
+	width:100px;
+	background-color:gray;
+	padding:5px;
+	display:block;
+	margin:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align:center;
+}
+#name
+{
+	font-family: 'Covered By Your Grace', cursive;
+	font-size:20px;
+}
+#crud_links
+{
+	margin-right:-10px;
+	display:block;
 }
 header
 {
@@ -50,22 +72,16 @@ menu a
 #sidebar
 {
 	margin-left:10px;
-	margin-top:-60px;
+	background-color:#e4e5e4;
 	padding:10px;
-  	position:relative;   
-  	border:1px solid #E8E8E8;  
-  	border-top:60px solid #fdfd86;
-  	border-bottom-right-radius: 60px 5px;
-  	display:inline-block;    
-	background: rgb(233,233,172); /* Old browsers */
-	background: -moz-linear-gradient(-45deg, rgba(233,233,172,1) 77%, rgba(233,233,172,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(77%,rgba(233,233,172,1)), color-stop(100%,rgba(255,255,214,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg, rgba(233,233,172,1) 77%,rgba(255,255,214,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg, rgba(233,233,172,1) 77%,rgba(255,255,214,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg, rgba(233,233,172,1) 77%,rgba(255,255,214,1) 100%); /* IE10+ */
-	background: linear-gradient(-45deg, rgba(233,233,172,1) 77%,rgba(255,255,214,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffff88',GradientType=0 ); /* IE6-9 fallback on horizontal gradient */
-	box-shadow:1px 1px 1px #333333;
+  	position:relative;
+  	box-shadow:0px 0px 1px #333333;
+  	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }​
 #logo img
 {
@@ -80,7 +96,6 @@ menu a
 #content
 {
 	padding:10px;
-	background-color: white;
 	overflow:auto;
 }
 #content_container
@@ -88,7 +103,27 @@ menu a
 	overflow:auto;
 	padding-bottom:10px;
 	display:block;
-	background-color: white;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#result
+{
+	border:1px dashed gray;
+	padding:10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.notice, .error
+{
+	position:absolute;
+	right:0;
+	margin-right:30px;
+	padding:10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	-moz-border-radius-bottomright: 10px;
@@ -96,6 +131,23 @@ menu a
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	box-shadow:0px 0px 1px #333333;
+	background-color:#b6f8bb;
+}
+.error
+{
+	background-color:#f8b6b6;
+}
+.user_form, .create_user
+{
+	margin-top:20px;
+}
+#project_description, #ticket_description
+{
+	height:100px;
+}
+.submit
+{
+	margin-top:10px;
 }
 
 /* #Media Queries

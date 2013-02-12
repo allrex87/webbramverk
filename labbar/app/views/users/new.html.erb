@@ -1,21 +1,12 @@
-<h1>Logga in</h1>
+<h1>Registrera</h1>
 
 <%= form_for @user_to_create, :url => { :action => "create"}, :html => { :class => "create_user"} do |f| %>
-	
-	<%= f.label :first_name, "Förnamn" %>
-		<%= f.text_field :first_name %>
-		
-	<%= f.label :last_name, "Efternamn" %>
-		<%= f.text_field :last_name %>
-		
-	<%= f.label :email, "Email" %>
-		<%= f.email_field :email %>
-		
-	<%= f.label :password, "Lösenord" %>
-		<%= f.password_field :password %>
-		
-	<%= f.label :password_confirmation, "Upprepa lösenord" %>
-		<%= f.password_field :password_confirmation %>
-		
+
+	<%= f.text_field :first_name, :placeholder => "Förnamn" %>
+	<%= f.text_field :last_name, :placeholder => "Efternamn" %>
+	<%= f.text_field :email, :placeholder => "Email" %>
+	<%= f.password_field :password, :placeholder => "Password" %>
+	<%= f.password_field :password_confirmation, :placeholder => "Confirm password" %>
+
 	<%= submit_tag("Registrera") %>
 <% end %>

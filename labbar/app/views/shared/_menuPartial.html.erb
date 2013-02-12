@@ -1,11 +1,11 @@
 <menu>
 	<div class="three columns" id="logo"> <%= image_tag "logo.png" %> </div>
-		
-	<a href="/registrera/" class="four columns <%= "active" if @active_page == "registrera" %>" >
-		Registrera dig
+	
+	<a href="/home/" class="four columns <%= "active" if @active_page == "home" %>" >
+		Start
 	</a>
-			
-	<a href="/" class="four columns <%= "active" if @active_page == "/" %>" >
-		Logga in
+	
+	<a href="/projects/" class="four columns <%= "active" if @active_page == "projekt" %>" >
+		Alla projekt
 	</a>
 </menu>

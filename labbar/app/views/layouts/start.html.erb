@@ -25,14 +25,10 @@
 			<%= render(:partial => "shared/menuStartPartial")%>
 		</header>
 		<div id="content_container" class="sixteen columns">
-
-		<% if flash[:notice] %>
-			<div class="notice"><%= flash[:notice]%></div>
-		<% end %>
-
-		<p>Logga in eller registrera dig</p>
-						
-			<%= yield %>
+		
+		<%= render(:partial => "shared/error")%>
+		
+		<%= yield %>
 		</div>
 	</div>
 </body>

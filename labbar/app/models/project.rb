@@ -1,22 +1,28 @@
+# coding: utf-8
 class Project < ActiveRecord::Base
   has_and_belongs_to_many :users
   belongs_to :user
-  has_many :tickets
-  
+  has_many :tickets, :dependent => :destroy
+ 
   attr_accessible :project_name, :description, :start_date, :end_date
   
-  #simle validation kollar om den har ett värde
-  validates_presence_of :project_name
+  validates :project_name,
+  :presence => {:message => 'Du måste ange ett projektnamn'},
+  :length => { :within => 1..40, :message => 'Projektnamnet måste vara mellan 1-40 tecken' }
   
-  #validates_precene_of :first_name, :message => "Du måste fylla i ett namn"
-  #validates_length_of ser till att en sträng har en viss längd
-  #validates_numericality_of ser till att det är ett nummer
-  #validates_format_fo reguljära uttryck
-  #validates_acceptane_of checkbox som måste checkas i
-  #validates_confirmation_of används när manska upprepa t ex lösenord
+  validates :description,
+  :presence => {:message => 'Du måste ange en beskrivning'}
   
-  #validates   :first_name,
-  # =>         :precsence => { :message => "Du måste ange..."}
-  # =>         :lenght => {:minimum => 2, :maximum => 30, :message => "Måsta vara mellan..."}
+  validates :start_date,
+  :presence => {:message => 'Du måste ange ett startdatum'},
+  :format => { :with => /^\d{4}-\d{2}-\d{2}/, :message => "Startdatatumet är i fel format (år/månad/dag)"}
   
+  validates :end_date,
+  :presence => {:message => 'Du måste ett slutdatum'},
+  :format => { :with => /^\d{4}-\d{2}-\d{2}/, :message => "Slutdatatumet är i fel format (år/månad/dag)"}
+  
+  def self.search(search)
+    search_condition = "%" + search + "%"
+    return find(:all, :conditions => ['project_name LIKE ? OR description LIKE ?', search_condition, search_condition])
+  end
 end

@@ -18,12 +18,15 @@ Labbar::Application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-  resources :projects
-    
+  resources :home
   
-  match '/registrera' => 'users#new' , :as => :users_create
+  resources :projects do
+    resources :tickets
+  end
+  
+  match '/registrera' => 'users#new' , :as => :user_create
   match '/loggaut' => 'sessions#destroy', :as => :delete
-  match 'projects/create' => 'projects#create', :as => :projects_create
+  match 'projekt/search/' => 'projects#search'
   
   root :to => "sessions#new"
 

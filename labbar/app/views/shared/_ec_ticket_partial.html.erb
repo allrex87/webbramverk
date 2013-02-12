@@ -1,0 +1,12 @@
+<%= form_for [ @project, @ticket ], :html => { :class => "update_form"} do |f| %>
+	
+	<h3>Ticket namn</h3>
+	<%= f.text_field :ticket_name, :placeholder => "Ticket namn" %>
+	
+	<h3>Beskrivning</h3>
+	<%= f.text_area :description, :placeholder => "Beskrivning" %>
+	
+	<h3>Status</h3>
+    <%= collection_select(:ticket, :status_id, Status.all, :id, :status_name, {:selected => @ticket.status_id} ) %>
+	<%= submit_tag "Spara", :class => "submit" %>
+<% end %>

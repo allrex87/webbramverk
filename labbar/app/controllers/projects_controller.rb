@@ -1,52 +1,69 @@
+# coding: utf-8
 class ProjectsController < ApplicationController
+  
+  before_filter :confirm_logged_in
   
   def index
      @projects = Project.all
   end
   
+  def search
+     @sprojects = Project.search(params[:search]) if params[:search]
+     render "index"
+  end
+  
   def show
-    @Project = Project.find(params[:id])
+    @project = Project.find(params[:id])
   end
   
   def new
-    @project_to_create = Project.new
+    @project = Project.new
   end
   
   def create
-    @project_to_create = Project.new(params[:project])
-    if @project_to_create.save
+    @project = Project.new(params[:project])
+    @project.users = User.where(["id in (?)", params[:members]]).all
+    @project.user_id = current_user.id
+    if @project.save
       flash[:notice] = "Projektet är skapat!"
-      redirect_to projects_path(@project_to_create)
+      redirect_to project_path(@project)
     else
-      #valideringfel hittas i Project.errors
-      redirect_to projects_path
+      flash[:alert] = format_errors(@project)
+      render :action => "new"
     end
   end
   
-  #GET /pojects/1/edit
   def edit
-    #id parametern får vi med via url:en
-    @Project = Project.find(params[:id])
+    @project = Project.find(params[:id])
   end
   
-  #PUT /pojects/1
   def update
-    @Project = Project.find(params[:id])
-    #smidigt att uppdatera alla attribut samtidigt
-    if @Project.update_attributes(params[:project])
-       flash[:notice] = "Projektet är redigerat!"
-      redirect_to projects_path
+    @project = Project.find(params[:id])
+    if(current_user.id == @project.user_id)
+      #smidigt att uppdatera alla attribut samtidigt
+      @project.users = User.where(["id in (?)", params[:members]]).all
+      if @project.update_attributes(params[:project])
+        flash[:notice] = "Projektet är redigerat!"
+        redirect_to project_path(@project)
+      else
+        flash[:alert] = format_errors(@project)
+        render :action => "edit"
+      end
     else
-      #valideringfel hittas i Project.errors
-      render :action => "edit"
+      flash[:alert] = "Du är inte authoriserad för detta projektet!"
+      redirect_to project_path()
     end
   end
   
   def destroy
     #destroy plcokar bort tillhörande reltioner
-    @Project = Project.find(params[:id])
-    @Project.destroy
-     flash[:notice] = "Projektet är borttaget!"
-    redirect_to projects_path
+    @project = Project.find(params[:id])
+    if(current_user.id == @project.user_id)
+      @project.destroy
+      flash[:notice] = "Projektet är borttaget!"
+      redirect_to projects_path
+    else
+      flash[:alert] = "Du är inte authoriserad för detta projektet!"
+    end
   end
 end

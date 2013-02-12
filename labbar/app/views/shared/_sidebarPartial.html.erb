@@ -1,15 +1,20 @@
 <div id="authorize">
-		<% if authorized %>
-			<p>välkommen user?<p>
-		<% else%>
-			<p>Du är utloggad</p><button >logga in</button>
-		<% end %>
-	</div>
+	  <p>Välkommen</p>
+	  <p id="name"><%= current_user.first_name + " " + current_user.last_name %></p>
+  <%= link_to "Logga ut", delete_path %>
+</div>
 
 
-<h2> Dina projekt</h2>
-<p>Projektnamn, roll</p>
-<p>Du har inga proj för tillfället</p>
-<h2> Dina senaste 10 tickets</h2>
-<p>Ticketnamn och beskrivning, status</p>
-<p>Du har inga tickets för tillfället</p>
+<h2> Projekt</h2>
+<% if get_item_list(Project, current_user).each do |i|%>
+	<%= link_to i.project_name, i%><br />
+<%end.empty?%>
+	<i>Du har inga projekt för tillfället</i>
+<%end%>
+<p><%= link_to "nytt projekt", new_project_path() %></p>
+<h2> 10 senaste tickets</h2>
+<% if get_item_list_limit(Ticket, current_user, 10).each do |item|%>
+	<p><%= link_to item.ticket_name, project_ticket_path(item.project_id, item.id) %></p>
+<%end.empty?%>
+	<p>Du har inga tickets för tillfället</p>
+<%end%>

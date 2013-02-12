@@ -1,0 +1,30 @@
+<%= form_for @project, :html => { :class => "update_form"} do |f| %>
+	
+	<h3>Projektnamn</h3> 
+	<%= f.text_field :project_name, :placeholder => "Projektnamn" %>
+	
+	<h3>Beskrivning</h3> 
+	<%= f.text_area:description, :placeholder => "Beskrivning" %>
+	
+	<h3>Start datum (år/mån/dag)</h3> 
+	<%= f.text_field :start_date, :placeholder => "Start datum" %>
+	
+	<h3>Start datum (år/mån/dag)</h3> 
+	<%= f.text_field :end_date, :placeholder => "Slut datum" %>
+    
+    <h3>Lägg till medlemmar</h3>      
+    <ul>
+	  <% User.where(["id != ?",current_user.id ]).all.each do |user| %>
+	      <li>
+	      	<%  if(@project.users.any?{|u| u.id == user.id}) %>
+	        	<%= check_box_tag 'members[]', user.id, 'active' -%>
+	        <% else %>
+	        	<%= check_box_tag 'members[]', user.id -%>
+	        <% end %>
+	        <%= h user.first_name -%>
+	      </li>
+	  <% end %>
+	</ul>
+		
+	<%= submit_tag "Spara", :class => "submit" %>
+<% end %>

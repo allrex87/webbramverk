@@ -14,8 +14,8 @@ class UsersController < ApplicationController
       end
     else
       #valideringfel hittas i Project.errors
-      #flash[:notice] = User.errors
+        flash[:alert] = format_errors(@user_to_create)
+        render :action => "new"
     end
   end
-
 end

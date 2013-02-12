@@ -1,0 +1,21 @@
+<div id="result">
+	<h1><%= @ticket.ticket_name %> </h1>
+	
+	<h3>Beskrivning</h3>
+	<% if (!@ticket.description.blank?) %>
+		<p><% @ticket.description %></p>
+	<% else %>
+		<p>Det finns ingen beskrivning</p>
+	<% end %>
+	
+	<h3>Status</h3>
+	<%= Status.where(["id = ?", @ticket.status_id]).first.status_name%>
+</div>
+<div class="seven columns" id="crud_links">
+	<% if(current_user.id == @ticket.user_id) %>
+		<%= link_to "Redigera", edit_project_ticket_path(@ticket.project_id, @ticket.id), :class => "two columns crud" %>	
+		<%= link_to 'Ta bort', project_ticket_path(@ticket.project_id, @ticket.id),:confirm => 'Are you sure?', :method => :delete, :class => "two columns crud" %>
+	<% end %>
+	<%= link_to "Till projektet", project_path(@project), :class => "two columns crud" %>
+</div>
+

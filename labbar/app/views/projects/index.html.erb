@@ -1,11 +1,34 @@
-<h1>Alla projekt</h1>
+<h1>Projekt</h1>
 
-<% @projects.each do |project|  %>
-	<ul>
-		<li><h2><%= link_to "#{project.project_name}", project_path(project)  %></h2></li>
-	</ul>
+<h2>Sök projekt</h2>
+<%= form_tag :controller => 'projects', :action => 'search' do %>
+	<%= text_field_tag :search, params[:search], :id => 'search_field' %>
+    <%= submit_tag "Sök" %> 
+<% end %> 
+  
+<% if(@sprojects) %>
+  <div id="result">
+	  <h2>Sökresultat</h2>
+	  <% if(!@sprojects.empty?) %>
+		<% @sprojects.each do |project|  %>
+			<ul>
+				<li><h2><%= link_to "#{project.project_name}", project_path(project)  %></h2></li>
+				<li><%= "#{project.description}"  %></li>
+			</ul>
+		<% end %>
+		<% else %>
+		<p>sökningen gav inga träffar</p>
+		<% end %>
+	</div>
 <% end %>
-
-
-<%# här ska det stå om jag är medlem eller ej i varje proj.
-#och om jag har några tickets #%>
+  
+<% if(@projects) %>
+	<div id="result">
+		<h2>Alla projekt</h2>
+		<% @projects.each do |project|  %>
+			<ul>
+				<li><h2><%= link_to "#{project.project_name}", project_path(project)  %></h2></li>
+			</ul>
+		<% end %>
+	</div>
+<% end %>

@@ -1,0 +1,15 @@
+<% if flash[:alert] %>
+	<% if flash[:alert].kind_of?(Array) %>
+		<div class="error"><%= flash[:alert].join("<br>").html_safe %></div>
+	<% else %>
+		<div class="error"><%= flash[:alert] %></div>
+	<% end %>
+<% end %>
+
+<% if flash[:notice] %>
+	<% if flash[:notice].kind_of?(Array) %>
+		<div class="notice"><%= flash[:notice].join("<br>").html_safe %></div>
+	<% else %>
+		<div class="notice"><%= flash[:notice] %></div>
+	<% end %>
+<% end %>

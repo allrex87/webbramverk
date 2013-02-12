@@ -14,10 +14,10 @@ u2 = User.create(:first_name => "Philip", :last_name => "Nilsson", :email => "te
 u3 = User.create(:first_name => "Andreas", :last_name => "Johansson", :email => "testuser@htomail.com", :password => "ettbraett")
 u4 = User.create(:first_name => "Jonas", :last_name => "Persson", :email => "testuser@htomail.com", :password => "ettbraett")
 
-p1 = Project.create(:project_name => "Projekt 1", :description => "nummer 1 testprojekt", :start_date => 20130401, :end_date => 20130708)
-p2 = Project.create(:project_name => "Projekt 2", :description => "nummer 2 testprojekt", :start_date => 20130405, :end_date => 20130708)
-p3 = Project.create(:project_name => "Projekt 3", :description => "nummer 3 testprojekt", :start_date => 20130409, :end_date => 20130708)
-p4 = Project.create(:project_name => "Projekt 4", :description => "nummer 4 testprojekt", :start_date => 20130430, :end_date => 20130708)
+p1 = Project.create(:project_name => "Projekt 1", :description => "nummer 1 testprojekt", :start_date => "2013/04/01", :end_date => "2013/07/08")
+p2 = Project.create(:project_name => "Projekt 2", :description => "nummer 2 testprojekt", :start_date => "2013/04/05", :end_date => "2013/07/08")
+p3 = Project.create(:project_name => "Projekt 3", :description => "nummer 3 testprojekt", :start_date => "2013/04/09", :end_date => "2013/07/08")
+p4 = Project.create(:project_name => "Projekt 4", :description => "nummer 4 testprojekt", :start_date => "2013/04/30", :end_date => "2013/07/08")
 
 #lägger till ägare för project
 u1.projects << p1
