@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   before_filter :confirm_logged_in
   
   def index
-     @projects = Project.all
+    user_projects
   end
   
   def search
@@ -13,7 +13,11 @@ class ProjectsController < ApplicationController
   end
   
   def show
-    @project = Project.find(params[:id])
+    @project = is_member(params[:id])
+    if !@project
+      flash[:alert] = "Du är inte authoriserad för detta projektet!"
+      redirect_to projects_path()
+    end
   end
   
   def new

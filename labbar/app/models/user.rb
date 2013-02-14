@@ -20,7 +20,10 @@ class User < ActiveRecord::Base
  
   validates :email,
     :presence => { :message => 'Du måste ange en emailadress'},
-    :format => { :with => /^([^\s]+)((?:[-a-z0-9]\.)[a-z]{2,})$/i, :message => "Emailadressen är inte giltig" }
+    :format => { :with => /^([^\s]+)((?:[-a-z0-9]\.)[a-z]{2,})$/i, :message => "Emailadressen är inte giltig" },
+    :uniqueness => { :case_sensitive => false , :message => "Emailadressen är redan registrerad"}
+    
+    
   
  def self.authenticate(email_try, password_try)
     user = find_by_email(email_try)
