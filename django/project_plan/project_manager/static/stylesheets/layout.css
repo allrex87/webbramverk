@@ -16,18 +16,148 @@
 
 /* #Site Styles
 ================================================== */
-
-.container
+#ui-datepicker-div
 {
-	background-color:pink;
+	background-color:white;
+	padding:10px;
+}
+.errorlist
+{
+	color:Red;
+}
+body
+{
+	background-color:#f7f4f2;
+}
+a
+{
+	text-decoration:none;
+	font-family: 'Oswald', sans-serif;
+	color:#6cc927;
+}
+a:hover
+{
+	color:#9cae92;
+}
+a.crud
+{
+	width:100px;
+	background-color:gray;
+	padding:5px;
+	display:block;
+	margin:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align:center;
+}
+#name
+{
+	font-family: 'Covered By Your Grace', cursive;
+	font-size:20px;
+}
+#crud_links
+{
+	margin-right:-10px;
+	display:block;
 }
 header
 {
-	background-color:gray;
+	margin-top:20px;
+	background-color:#333234;
+	color:white;
+	position:relative;
+	z-index:2;
+	box-shadow:0px 1px 4px #767676;
 }
-.userinfo
+menu a 
 {
-	background-color:#db8686;
+	padding-top:15px;
+	color:white;
+	font-size:15px;
+	display:block;
+	text-align:center;
+}
+#sidebar
+{
+	margin-left:10px;
+	background-color:#e4e5e4;
+	padding:10px;
+  	position:relative;
+  	box-shadow:0px 0px 1px #333333;
+  	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}​
+#logo img
+{
+	display:block;
+	width:200px;
+}
+#authorize
+{
+	text-align:left;
+	border-bottom:1px dashed black;
+}
+#content
+{
+	padding:10px;
+	overflow:auto;
+}
+#content_container
+{
+	overflow:auto;
+	padding-bottom:10px;
+	display:block;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#result
+{
+	border:1px dashed gray;
+	padding:10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+li.warning, li.success
+{
+	position:absolute;
+	right:0;
+	float:right;
+	margin-right:30px;
+	padding:10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow:0px 0px 1px #333333;
+	background-color:#b6f8bb;
+}
+li.warning
+{
+	background-color:#f8b6b6;
+}
+.user_form, .create_user
+{
+	margin-top:20px;
+}
+#project_description, #ticket_description
+{
+	height:100px;
+}
+.submit
+{
+	margin-top:10px;
 }
 
 

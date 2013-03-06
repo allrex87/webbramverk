@@ -1,14 +1,14 @@
 {% extends 'shared/base.html' %}
 
 {% block title %}
-	Skapa ticket
+	Create Ticket
 {% endblock %}
 {% block content %}
 	
-	<h1>Skapa ticket</h1>
+	<h1>Create Ticket</h1>
 	<form action="{{ticket_add}}" method="POST"> {% csrf_token %}
 		{{ form.as_p }}
-		<input type="submit" value="spara" />
+		<input type="submit" value="save" />
 	</form>
 <script>
 	$(function() {

@@ -32,39 +32,57 @@
 	</head>
     <body>
     	<div class="container">
-    		<header class="sixteen columns">
-        		<nav>
-        			<ul>
-						<li><a href="{% url projects_for_user %}">All projects</a></li>
-					</ul>
-        		</nav>
+    		<header class="sixteen columns alpha">
+        		<menu>
+					<div class="three columns" id="logo"><img src="{{ STATIC_URL }}images/logo.png" /> </div>
+					<a class="four columns" href="{% url projects_for_user %}">All projects</a>
+					<a class="four columns" href="{% url project_add %}">New project</a>
+				</menu>
           	</header>
-			<aside class="userinfo">
-				{% if user.is_authenticated %}
-				  <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
-				  <a href="{% url logout_user %}">Logga ut</a>
-				{% else %}
-				  <p>Welcome, new user. Please log in or <a href="{% url register_user %}">Register</a></p>
-				{% endif %}
+			<div id="content_container" class="sixteen columns">
 				
-				<h2>Projekt(Owner)</h2>
-				{% for p in user.project_owner.all %}
-					<li><a href="{% url one_project p.id %}">{{p}}</a></li>
-				{% endfor %}
-				
-				<h2>Your tickets(Owner)</h2>
-				{% if user.tickets|length %}
-					{% for t in user.ticket_owner.all %}
-						<li><a href="{% url one_ticket t.project_id, t.id %}">{{t}}</a></li>
+				{% if messages %}
+				<ul class="messages">
+					{% for message in messages %}
+					<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
 					{% endfor %}
+				</ul>
 				{% endif %}
-			</aside>
-			<section id="content">
+				
+				<div class="four columns alpha omega" id="sidebar">
+					{% if user.is_authenticated %}
+						<p>Welcome, {{ user.username }}!</p>
+						<a href="{% url logout_user %}">Log out</a>
+						<h2>Projects</h2>
+						
+						{% if user.project_owner.all|length %}
+							{% for p in user.project_owner.all %}
+								<p><a href="{% url one_project p.id %}">{{p}}</a></p>
+							{% endfor %}
+						{% else %}
+							<p>You have no projects</p>
+						{% endif %}
+						
+						<h2>Your tickets</h2>
+						{% if user.ticket_owner.all|length %}
+							{% for t in user.ticket_owner.all %}
+								<p><a href="{% url one_ticket t.project_id, t.id %}">{{t}}</a></p>
+							{% endfor %}
+						{% else %}
+							<p>You have no tickets</p>
+						{% endif %}
+					
+					{% else %}
+					  <p>Welcome, new user.</p>
+					  <p>Please <a href="{% url login_user %}">Log in</a> in or <a href="{% url register_user %}">Register</a></p>
+					{% endif %}
+				</div>
+				<div class="eleven columns alpha omega" id="content">
 				{% block content %}
 					
 				{% endblock %}
-			</section><!--content-->	
-			<footer></footer>
+				</div>
+			</div><!--content_container-->
 		</div><!--container-->
 	</body>
 </html>

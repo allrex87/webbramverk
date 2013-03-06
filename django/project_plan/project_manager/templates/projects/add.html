@@ -1,14 +1,14 @@
 {% extends 'shared/base.html' %}
 
 {% block title %}
-	Skapa projekt
+	Create project
 {% endblock %}
 {% block content %}
 	
-	<h1>Skapa projekt</h1>
+	<h1>Create project</h1>
 	<form action="{{project_add}}" method="POST"> {% csrf_token %}
 		{{ form.as_p }}
-		<input type="submit" value="spara" />
+		<input type="submit" value="save" />
 	</form>
 <script>
 	$(function() {

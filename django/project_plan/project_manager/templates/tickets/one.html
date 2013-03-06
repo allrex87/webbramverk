@@ -1,26 +1,24 @@
 {% extends 'shared/base.html' %}
 {% load custom_filters %}
 {% block title %}
-	Projekt
+	Project
 {% endblock %}
 {% block content %}
-
-	<div class="Ticket">
-		<h2>{{ticket}}</h2>
-		<h3>Beskrivning</h3>
+	<div id="result">
+		<h1>{{ticket}}</h1>
+		<h3>Description</h3>
 			<p class="ticket_desc">{{ticket.ticket_desc}}</p>
-		<h3>Ägare</h3>
+		<h3>Owner</h3>
 			<p class="owner">{{ticket.owner}}</p>
 		<h3>Status</h3>
 			<p class="status">{{ticket.status}}</p>
-
-
-		{% if ticket|ownership:user %}
-			<p>
-				<a href={% url ticket_edit ticket.project_id, ticket.id %}>Edit</a>
-				<a href={% url ticket_remove ticket.project_id, ticket.id %}>Remove</a>
-			</p>
-		{% endif %}
 	</div>
-
+	<div class="seven columns" id="crud_links">
+	{% if ticket|ownership:user %}
+		<p>
+			<a href={% url ticket_edit ticket.project_id, ticket.id %}>Edit</a>
+			<a href={% url ticket_remove ticket.project_id, ticket.id %}>Remove</a>
+		</p>
+	{% endif %}
+	</div>
 {% endblock %}

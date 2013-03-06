@@ -1,25 +1,26 @@
 {% extends 'shared/base.html' %}
 {% load custom_filters %}
 {% block title %}
-	Projekt
+	Projects
 {% endblock %}
 {% block content %}
 
-	<p>Hello</p>
-	<p>Valde list of projects</p>
+	<h1>Projects</h1>
 
 	<div class="search">
 		<form action="{{projects_for_user}}" method="POST"> {% csrf_token %}
 			{{ form.as_p }}
-			<input type="submit" value="sök" />
+			<input type="submit" value="search" />
 		</form>
 	</div>
-	
 	<div class="projects">
 	{% if projects|length %}
+	<ul>
 		{% for project in projects %}
-			<li><a href="{% url one_project project.id %}">{{project.project_name}}</a></li>
+			<li><h2><a href="{% url one_project project.id %}">{{project.project_name}}</a></h2></li>
+			<p>{{project.project_desc}}
 		{% endfor %}
+	</ul>
 	{% endif %}		
 	</div>
 
