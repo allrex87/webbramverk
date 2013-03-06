@@ -1,0 +1,39 @@
+{% extends 'shared/base.html' %}
+{% load custom_filters %}
+{% block title %}
+	Projekt
+{% endblock %}
+{% block content %}
+
+	<div class="projects">
+		<h2>{{project}}</h2>
+		<h3>Beskrivning</h3>
+			<p class="project_desc">{{project.project_desc}}</p>
+		<h3>Start datum</h3>
+			<p class="start_date">{{project.start_date}}</p>
+		<h3>Slut datum</h3>
+			<p class="end_date">{{project.end_date}}</p>
+		<h3>Ägare</h3>
+			<p class="owner">{{project.owner.get_full_name}}</p>
+		<h3>Medlemmar</h3>
+		{% for member in project.members.all %}
+			<p class="members">{{member.username}}</p>
+		{% endfor %}
+		<h3>Tickets</h3>
+		{% for ticket in project.tickets.all %}
+			<a class="tickets" href="{% url one_ticket project.id, ticket.id %}">{{ticket}}</a>
+		{% endfor %}
+
+		{% if project|membership:user %}
+			<a href={% url ticket_add project.id%}>Create new Ticket</a>
+		{% endif %}
+
+		{% if project|ownership:user %}
+			<p>
+				<a href={% url project_edit project.id %}>Edit</a>
+				<a href={% url project_remove project.id %}>Remove</a>
+			</p>
+		{% endif %}
+	</div>
+
+{% endblock %}

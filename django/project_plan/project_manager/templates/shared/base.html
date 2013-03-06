@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+		<title>
+			{% block title %}
+				Project manager
+			{% endblock %}
+		</title>
+		{% block script %}
+			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+			<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+		{% endblock %}
+		{% block stylesheet %}
+			<link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/style.css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/base.css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/skeleton.css">
+			<link rel="stylesheet" href="{{ STATIC_URL }}stylesheets/layout.css">
+		{% endblock %}
+		<!-- Favicons -->
+		<link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico">
+		<link rel="apple-touch-icon" href="{{ STATIC_URL }}images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}images/apple-touch-icon-114x114.png">
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Mobile Specific Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	</head>
+    <body>
+    	<div class="container">
+    		<header class="sixteen columns">
+        		<nav>
+        			<ul>
+						<li><a href="{% url projects_for_user %}">All projects</a></li>
+					</ul>
+        		</nav>
+          	</header>
+			<aside class="userinfo">
+				{% if user.is_authenticated %}
+				  <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
+				  <a href="{% url logout_user %}">Logga ut</a>
+				{% else %}
+				  <p>Welcome, new user. Please log in or <a href="{% url register_user %}">Register</a></p>
+				{% endif %}
+				
+				<h2>Projekt(Owner)</h2>
+				{% for p in user.project_owner.all %}
+					<li><a href="{% url one_project p.id %}">{{p}}</a></li>
+				{% endfor %}
+				
+				<h2>Your tickets(Owner)</h2>
+				{% if user.tickets|length %}
+					{% for t in user.ticket_owner.all %}
+						<li><a href="{% url one_ticket t.project_id, t.id %}">{{t}}</a></li>
+					{% endfor %}
+				{% endif %}
+			</aside>
+			<section id="content">
+				{% block content %}
+					
+				{% endblock %}
+			</section><!--content-->	
+			<footer></footer>
+		</div><!--container-->
+	</body>
+</html>

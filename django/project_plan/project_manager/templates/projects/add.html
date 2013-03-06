@@ -1,0 +1,19 @@
+{% extends 'shared/base.html' %}
+
+{% block title %}
+	Skapa projekt
+{% endblock %}
+{% block content %}
+	
+	<h1>Skapa projekt</h1>
+	<form action="{{project_add}}" method="POST"> {% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="spara" />
+	</form>
+<script>
+	$(function() {
+		$("#id_start_date").datepicker();
+		$("#id_end_date").datepicker();
+	});
+</script>
+{% endblock %}
