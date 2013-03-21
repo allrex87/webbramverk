@@ -22,8 +22,4 @@ urlpatterns = patterns('',
 	url(r'^$', 'project_manager.views.login_user', name='login_user'),
 	url(r'^logout/$', 'project_manager.views.logout_user', name='logout_user'),
 	url(r'^register/$', 'project_manager.views.register_user', name="register_user"),
-	
-	#url(r'^projects/(?P<project_id>/d+)/delete/$', 'project_manager.views.project_delete', name="project_delete"),
-	#url(r'^projects/ticket/(?P<ticket_id>\d+)/$', 'project_manager.views.project_list', name="project_list_with_ticket"),
-	#url(r'^projects/user/(?P<user_id>\d+)/$', 'project_manager.views.project_list', name="project_list"),
 )

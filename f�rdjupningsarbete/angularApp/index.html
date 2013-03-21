@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" ng-app> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Webbramverk 1DV450</title>
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	
+	<!-- Scripts
+	================================================== -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular-resource.min.js"></script>
+    <script type="text/javascript" src="Product.js"></script>
+
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<!-- Delete everything in this .container and get started on your own site! -->
+
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom">Webbramverk 1DV450</h1>
+			<h5>Fördjupningsarbete, test applikation</h5>
+			<hr />
+		</div>
+		<div ng-controller="ProductCtrl" class="eight columns">
+			<ul ng-repeat="product in productData">
+	          	<li class="name seven columns alpha">{{product.name}}</li>
+				<li class="name_2 seven columns">{{product.name_2}}</li>
+				<li class="article_no seven columns">{{product.article_no}}</li>
+				<li class="origin_country seven columns">tillverkat i {{product.origin_country}}</li>
+				<li class="packaging seven columns">{{product.packaging || "ingen information"}}</li>
+				<li class="tags seven columns"><span ng-repeat="tag in product.tags">{{tag.name}}</span></li>
+				<li class="price seven columns omega">{{product.price}} kr</li>
+	        </ul>
+		</div>
+	</div><!-- container -->
+</body>
+</html>
